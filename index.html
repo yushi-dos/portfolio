@@ -64,10 +64,23 @@
     <!-- About -->
     <section id="about">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 reveal visible">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-5 reveal visible">
+                    <div class="about-photo-wrap mx-auto">
+                        <div class="about-photo-blob"></div>
+                        <img src="src/assets/images/ayushi-photo.JPEG" alt="Ayushi" class="about-photo" onerror="this.parentElement.classList.add('no-photo')">
+                        <div class="about-photo-fallback">
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+                        <div class="about-badge">
+                            <i class="bi bi-geo-alt-fill"></i> Ottawa, ON
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 reveal visible">
                     <h3 class="section-heading">About Me</h3>
-                    <div class="section-divider"></div>
                     <p class="about-text">
                         I'm <strong>Ayushi</strong>, a second year software engineering student at Univeristy of Ottawa. When I'm not coding, you'll usually find me exploring new hobbies. Lately, I've been enjoying rock climbing, and I love creative activities such as pottery painting, paper crafting, and journaling. I'm always excited to learn new skills and challenge myself through new experiences.
                     </p>
@@ -81,14 +94,35 @@
 
         <div class="container">
 
-            <div class="row justify-content-center">
-                <div class="col-lg-8 reveal visible">
-                    <h3 class="section-heading">How I Work</h3>
+            <div class="row align-items-center g-5 flex-lg-row-reverse">
 
-                    <div class="section-divider"></div>
+                <div class="col-lg-5 reveal visible">
+                    <div class="code-window mx-auto">
+                        <div class="code-window-header">
+                            <span class="cw-dot cw-dot-1"></span>
+                            <span class="cw-dot cw-dot-2"></span>
+                            <span class="cw-dot cw-dot-3"></span>
+                            <span class="code-window-filename">portfolio.html</span>
+                        </div>
+                        <div class="code-window-body">
+                            <div class="code-line"><span class="cw-tag">&lt;section</span> <span class="cw-attr">id</span>=<span class="cw-str">"work"</span><span class="cw-tag">&gt;</span></div>
+                            <div class="code-line indent-1"><span class="cw-tag">&lt;h3&gt;</span>How I Work<span class="cw-tag">&lt;/h3&gt;</span></div>
+                            <div class="code-line indent-1 cw-comment">// still learning, still building</div>
+                            <div class="code-line indent-1"><span class="cw-tag">&lt;p&gt;</span>Refreshing HTML/CSS<span class="cw-tag">&lt;/p&gt;</span></div>
+                            <div class="code-line indent-1"><span class="cw-tag">&lt;p&gt;</span>Picking up JS + Bootstrap<span class="cw-tag">&lt;/p&gt;</span></div>
+                            <div class="code-line"><span class="cw-tag">&lt;/section&gt;</span></div>
+                        </div>
+                        <div class="code-window-footer">
+                            <span class="p-tag">HTML</span><span class="p-tag">CSS</span><span class="p-tag">JavaScript</span><span class="p-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 reveal visible">
+                    <h3 class="section-heading">How I Work</h3>
                     
                     <p class="work-text">
-                        I do not have any past UI developer work experience. As for UI projects, I have previously worked on making a website for a product for a class as group project. It helped me be more exposed to html/css. I am currently taking this class, so as to learn more and build more skills. Therefore, for building my portfolio, for writing html/css code, I just needed a quick refresher. I have watched how to use JS and Bootstrap for this assignment.
+                       When I first started this course, I did not have any UI developer work experience nor project experience. However, after completing my last assignment in my Analysis & Design of User Interface course, I have gained experience building a portfolio, a service site, an eCommerce site, a memory game and a dashboard, using Bootstrap, Javascript, preciously React, HTML & CSS. You can check out all these projects by clicking on Cases!
                     </p>
                 
                 </div>
@@ -105,7 +139,6 @@
                 <div class="col-12 reveal visible">
                     <h3 class="section-heading">Cases</h3>
                     
-                    <div class="section-divider"></div>
                 </div>
             </div>
             
@@ -113,16 +146,16 @@
                 
                 <div class="col-md-6 reveal visible">
                     
-                    <a class="case-card card border-0 h-100" href="https://paint-a-pot.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <a class="case-card card border-0 h-100" href="https://paint-a-pot.vercel.app/">
                         <img src="src/assets/images/paint-a-pot-logo.png" class="case-thumb-img"/>
                         
                         <div class="case-body">
                             <div class="case-title">Pottery Paiting Studio</div>
                             
-                            <p class="case-desc">Check out my pottery painting studio website.</p>
+                            <p class="case-desc">This website is a pottery painting website.</p>
                             
                             <div class="case-tags">
-                                <span class="p-tag">React</span><span class="p-tag">JavaScript</span><span class="p-tag">HTML/CSS</span>
+                                <span class="p-tag">React</span><span class="p-tag">HTML/CSS</span>
                             </div>
                             
                             <div class="case-arrow">
@@ -135,16 +168,16 @@
 
                 <div class="col-md-6 reveal visible">
                     
-                    <a class="case-card card border-0 h-100" href="https://bloom-one-murex.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <a class="case-card card border-0 h-100" href="https://bloom-one-murex.vercel.app/">
                         <img src="src/assets/images/bloom-logo.png" class="case-thumb-img"/>
                         
                         <div class="case-body">
                             <div class="case-title">Memory Game</div>
                             
-                            <p class="case-desc">Bored? Let's test your memory.</p>
+                            <p class="case-desc">This website is a pattern recognition memory game.</p>
                             
                             <div class="case-tags">
-                                <span class="p-tag">React</span><span class="p-tag">JavaScript</span>
+                                <span class="p-tag">React</span><span class="p-tag">HTML/CSS</span>
                             </div>
                             
                             <div class="case-arrow">
@@ -163,10 +196,10 @@
                         <div class="case-body">
                             <div class="case-title">eCommerce Site</div>
                             
-                            <p class="case-desc">Check out my new eCommerce site!</p>
+                            <p class="case-desc">This eCommerce site is a website for shopping for athletic wear.</p>
                             
                             <div class="case-tags">
-                                <span class="p-tag">React</span><span class="p-tag">Node.js</span><span class="p-tag">WebSockets</span>
+                                <span class="p-tag">React</span><span class="p-tag">HTML/CSS</span>
                             </div>
                             
                             <div class="case-arrow">
@@ -180,15 +213,15 @@
                 <div class="col-md-6 reveal visible">
                     
                     <a class="case-card card border-0 h-100" href="https://dashboard-rose-three-85.vercel.app/">
-                        <img src="https://mastermind.fims.uwo.ca/wp-content/uploads/2019/04/coming-soon-1.jpg" class="case-thumb-img"/>
+                        <img src="src/assets/images/currency-dashboard-logo.png" class="case-thumb-img"/>
                         
                         <div class="case-body">
                             <div class="case-title">Currency Dashboard</div>
                             
-                            <p class="case-desc">Under Construction.</p>
+                            <p class="case-desc">This dashboard shows the evolution of canadian dollar exchange rates throughout the year 2025.<p>
                             
                             <div class="case-tags">
-                                <span class="p-tag">React</span><span class="p-tag">Node.js</span><span class="p-tag">WebSockets</span>
+                                <span class="p-tag">React</span><span class="p-tag">HTML/CSS</span>
                             </div>
                             
                             <div class="case-arrow">
@@ -204,13 +237,6 @@
 
         
     </section>
-    
-    <!-- Coming soon page -->
-    <div id="coming-soon-page">
-        <h1 class="cs-title">Coming Soon</h1>
-        <p class="cs-sub">This case is currently under construction. Check back soon, something great is on the way.</p>
-        <button class="cs-back" onclick="closeComingSoon()">← Back to Portfolio</button>
-    </div>
 
     <footer>
         <div class="container">
